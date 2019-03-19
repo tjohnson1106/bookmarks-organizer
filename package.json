@@ -1,0 +1,17 @@
+{
+  "name": "bookmarks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thomas Johnson",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.0"
+  }
+}
