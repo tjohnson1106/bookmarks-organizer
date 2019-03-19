@@ -101,7 +101,30 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.rightContent .linkCard {
+  background: #333;
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.rightContent .linkCardImage {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+
+.rightContent .linkCardLink a {
+  color: white;
+  margin-left: 10px;
 }
 
 

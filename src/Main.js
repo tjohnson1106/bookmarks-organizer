@@ -63,11 +63,69 @@ export const Main = () => {
         </div>
 
         <div className="rightContent">
-          <div style={linkImageStyle} />
-          <div>
-            <h2>
-              <a href="#">Link</a>
-            </h2>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
+          </div>
+          <div className="linkCard">
+            <div className="linkCardImage" style={linkImageStyle} />
+            <div className="linkCardLink">
+              <h2>
+                <a href="#">Link</a>
+              </h2>
+            </div>
           </div>
         </div>
       </main>

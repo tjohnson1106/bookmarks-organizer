@@ -25757,10 +25757,78 @@ var Main = function Main() {
   })), _react.default.createElement("button", null, "Add"))), _react.default.createElement("div", {
     className: "rightContent"
   }, _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
     style: linkImageStyle
-  }), _react.default.createElement("div", null, _react.default.createElement("h2", null, _react.default.createElement("a", {
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
     href: "#"
-  }, "Link"))))));
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))), _react.default.createElement("div", {
+    className: "linkCard"
+  }, _react.default.createElement("div", {
+    className: "linkCardImage",
+    style: linkImageStyle
+  }), _react.default.createElement("div", {
+    className: "linkCardLink"
+  }, _react.default.createElement("h2", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Link")))))));
 };
 
 exports.Main = Main;
