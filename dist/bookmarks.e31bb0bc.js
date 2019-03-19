@@ -25716,7 +25716,37 @@ var _react = _interopRequireWildcard(require("react"));
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var Main = function Main() {
+  // cardData -> state variable setCardData -> method to update
+  var _useState = (0, _react.useState)([{
+    // initial state
+    linkName: "link",
+    linkHref: "https://github.com"
+  }]),
+      _useState2 = _slicedToArray(_useState, 2),
+      cardData = _useState2[0],
+      setCardData = _useState2[1];
+
+  var _useState3 = (0, _react.useState)({
+    linkName: "",
+    linkHref: ""
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      newCard = _useState4[0],
+      setNewCard = _useState4[1];
+
   var linkImageStyle = {
     backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg')"
   };
@@ -25734,13 +25764,22 @@ var Main = function Main() {
     src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     alt: "React Icon"
   }), _react.default.createElement("form", {
-    action: ""
+    action: "",
+    onSubmit: function onSubmit(e) {
+      return e.preventDefault();
+    }
   }, _react.default.createElement("h2", {
     className: "formTitle"
   }, "Add a bookmark"), _react.default.createElement("div", null, _react.default.createElement("label", {
     for: "linkTitle",
     className: "formLabel"
   }, "Enter a bookmark name", " "), _react.default.createElement("input", {
+    value: newCard.linkName,
+    onChange: function onChange(e) {
+      return setNewCard(_objectSpread({}, newCard, {
+        linkHref: e.currentTarget.value
+      }));
+    },
     type: "text",
     name: "linkTitle",
     minLength: "1",
@@ -25750,6 +25789,12 @@ var Main = function Main() {
     for: "linkHref",
     className: "formLabel"
   }, "Enter a bookmark name", " "), _react.default.createElement("input", {
+    value: newCard.linkHref,
+    onChange: function onChange(e) {
+      return setNewCard(_objectSpread({}, newCard, {
+        linkHref: e.currentTarget.value
+      }));
+    },
     type: "text",
     name: "linkHref",
     minLength: "7",

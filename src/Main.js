@@ -1,6 +1,20 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 export const Main = () => {
+  // cardData -> state variable setCardData -> method to update
+  const [cardData, setCardData] = useState([
+    {
+      // initial state
+      linkName: "link",
+      linkHref: "https://github.com"
+    }
+  ]);
+
+  const [newCard, setNewCard] = useState({
+    linkName: "",
+    linkHref: ""
+  });
+
   const linkImageStyle = {
     backgroundImage:
       "url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg')"
@@ -28,7 +42,7 @@ export const Main = () => {
             alt="React Icon"
           />
 
-          <form action="">
+          <form action="" onSubmit={(e) => e.preventDefault()}>
             <h2 className="formTitle">Add a bookmark</h2>
             <div>
               <label for="linkTitle" className="formLabel">
@@ -36,6 +50,13 @@ export const Main = () => {
               </label>
 
               <input
+                value={newCard.linkName}
+                onChange={(e) =>
+                  setNewCard({
+                    ...newCard,
+                    linkHref: e.currentTarget.value
+                  })
+                }
                 type="text"
                 name="linkTitle"
                 minLength="1"
@@ -51,6 +72,13 @@ export const Main = () => {
               </label>
 
               <input
+                value={newCard.linkHref}
+                onChange={(e) =>
+                  setNewCard({
+                    ...newCard,
+                    linkHref: e.currentTarget.value
+                  })
+                }
                 type="text"
                 name="linkHref"
                 minLength="7"
